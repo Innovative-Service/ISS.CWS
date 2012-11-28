@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="leftBar">
+    @RenderBody()
+</div>
+<div class="rightBar">
+    <div class="rightBarBox">
+
+        <h3>Quick contact</h3>
+        <ul class="qContactsInfo">
+            <li>
+                <img alt="" src="/assets/images/i1.jpg" /><span>+375-<span style="display: none">_</span>29-631-0711</span></li>
+            <li>
+                <img alt="" src="/assets/images/i2.jpg" /><a href="mailto:info@innovative.by" class="readMore">info@innovative.by</a></li>
+            <li>
+                <img alt="" src="/assets/images/i3.jpg" /><a href="innovative.by" class="readMore">innovative.by</a></li>
+        </ul>
+        <div class="clear"></div>
+
+        <span class="requestCbHdr">Request A Call Back</span>
+        <div class="requestCb">
+
+            <form enctype="multipart/form-data" id="quick-contact-form" action="http://www.Innovative Services.com/softwaretesting" method="post">
+                <select name="QuickContactForm[budget]" id="QuickContactForm_budget">
+                    <option value="">Budget:</option>
+                    <option value="1">&lt; $5000</option>
+                    <option value="2">$5000 - $10 000</option>
+                    <option value="3">$10 000 - $20 000</option>
+                    <option value="4">&gt;$20 000</option>
+                    <option value="5">Hourly Rate</option>
+                    <option value="6">Dedicated Team</option>
+                    <option value="7">Uncertain</option>
+                </select><input onfocus="if(this.value==&#039;Type your name here&#039;) { this.value=&#039;&#039;; Innovative Services.page.chanceColorInput(this, &#039;Type your name here&#039;); }" onblur="if(this.value==&#039;&#039;) { this.value=&#039;Type your name here&#039;; Innovative Services.page.chanceColorInput(this, &#039;Type your name here&#039;); }" value="Type your name here" style="width: 180px; margin-bottom: 5px;" name="QuickContactForm[name]" id="QuickContactForm_name" type="text" /><input onfocus="if(this.value==&#039;Type your email here&#039;) { this.value=&#039;&#039;; Innovative Services.page.chanceColorInput(this, &#039;Type your email here&#039;); }" onblur="if(this.value==&#039;&#039;) { this.value=&#039;Type your email here&#039;; Innovative Services.page.chanceColorInput(this, &#039;Type your email here&#039;); }" style="width: 180px; margin-bottom: 5px;" value="Type your email here" name="QuickContactForm[email]" id="QuickContactForm_email" type="text" /><input onfocus="if(this.value==&#039;Type your phone number here&#039;) { this.value=&#039;&#039;; Innovative Services.page.chanceColorInput(this, &#039;Type your phone number here&#039;); }" onblur="if(this.value==&#039;&#039;) { this.value=&#039;Type your phone number here&#039;; Innovative Services.page.chanceColorInput(this, &#039;Type your phone number here&#039;); }" style="width: 180px; margin-bottom: 5px;" value="Type your phone number here" name="QuickContactForm[phone]" id="QuickContactForm_phone" type="text" />
+                <div style="margin: 0; resize: none; position: relative; display: block; width: 180px;" class="ui-wrapper">
+                    <textarea rows="8" cols="1" onfocus="if(this.value==&#039;Type details here&#039;) { this.value=&#039;&#039;; Innovative Services.page.chanceColorInput(this, &#039;Type details here&#039;); }" onblur="if(this.value==&#039;&#039;) { this.value=&#039;Type details here&#039;; Innovative Services.page.chanceColorInput(this, &#039;Type details here&#039;); }" class="ui-resizable" name="QuickContactForm[message]" id="QuickContactForm_message">Type details here</textarea>
+                </div>
+
+                <input style="background: transparent url(&#039;images/sendBt.jpg&#039;); height: 16px; width: 90px; border: 0px solid red; cursor: pointer" type="submit" name="yt0" value="" id="yt0" /><img style="display: none; margin-left: 3px" id="loading_qcontact" src="/assets/images/loading.gif" alt="" />
+            </form>
+        </div>
+
+        <div id="result" style="text-align: center" class="msg-text "></div>
+    </div>
+    <div class="rightBarBox">
+        <h3>Customers</h3>
+        <center>
+            @*<img src="/assets/images/partnerSmall.jpg" alt="" />*@
+        </center>
+    </div>
+    <div class="rightBarBox">
+        <h3>Latest Articles</h3>
+        <ul class="latestnews relatedLinks">
+            <li>
+                <a href="#">Article 1</a>
+                <div class="intro-text">Custom mobile applications for smartphones can be specifically designed to give you accurate information on the number of calories burned...</div>
+            </li>
+            <li>
+                <a href="#">Article 2</a>
+                <div class="intro-text">The essence of any insurance company implies guaranteed coverage of different types of risks that enables their clients to develop rapidl...</div>
+            </li>
+            <li>
+                <a href="#">Article 3</a>
+                <div class="intro-text">Customer loyalty and quick response to any request are the key points for travel agencies that have to create competitive strategies, res...</div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="clear"></div>

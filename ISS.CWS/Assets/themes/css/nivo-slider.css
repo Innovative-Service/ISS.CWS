@@ -11,10 +11,18 @@
  
  
 /* The Nivo Slider styles */
-.nivoSlider {position:relative; font-family:Verdana, Geneva, sans-serif}
+.nivoSlider {position:relative; font-family:Verdana, Geneva, sans-serif; height:316px;}
 .nivoSlider img {position:absolute; top:0px; left:0px;}
 .nivoSlider a.nivo-imageLink {position:absolute; top:0px; left:0px; width:100%; height:100%; border:0; padding:0; margin:0; z-index:6; display:none;}
-#slider .nivo-controlNav {position:absolute; margin-left:759px; width:215px; height:316px; height:315px\9; overflow:hidden; z-index:8;}
+#slider .nivo-controlNav 
+{
+    position:absolute; 
+    margin-left:759px; 
+    width:215px; 
+    height:316px; 
+    overflow:hidden; 
+    z-index:8;
+}
 #slider .nivo-controlNav div{
 	position:relative; z-index:9; cursor:pointer; height:53px;		
 	/* RGBa with 0.7 opacity */

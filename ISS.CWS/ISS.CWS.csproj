@@ -832,6 +832,13 @@
     <Content Include="Views\Services\Development.cshtml" />
     <Content Include="Views\Shared\_NestedLayout.cshtml" />
     <Content Include="Views\Company\ThankYou.cshtml" />
+    <Content Include="Views\Industries\RealEstate.cshtml" />
+    <Content Include="Views\Industries\FinancialServices.cshtml" />
+    <Content Include="Views\Industries\Healthcare.cshtml" />
+    <Content Include="Views\Industries\Insurance.cshtml" />
+    <Content Include="Views\Industries\Education.cshtml" />
+    <Content Include="Views\Industries\Retail.cshtml" />
+    <Content Include="Views\Shared\_NestedLayoutIndustries.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

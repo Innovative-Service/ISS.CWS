@@ -54,7 +54,7 @@
     <link rel="stylesheet" type="text/css" href="assets/themes/css/nivo-slider.css" />
     <script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="assets/2d9b21fc/jquery.yii.js"></script>
-    <title>@ViewBag.Title - Software Development Company. Custom Software Development Services. Software Outsourcing - Innovative Services</title>
+    <title>Software Development Company. Custom Software Development Services. Software Outsourcing - Innovative Services</title>
     <meta name="description" content="Innovative Services - software development company from Eastern Europe with expertise in software development services, custom software development and agile software development stands among the best software outsourcing and software development companies" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="software development, software company, software development company, software development companies, software development services, custom software development services, custom software development" />
@@ -87,7 +87,16 @@
                             <li>@Html.ActionLink("Support Helpdesk", "Support", "Services")</li>
                         </ul>
                     </li>
-                    <li>@Html.ActionLink("Industries", "Overview", "Industries")</li>
+                    <li>@Html.ActionLink("Industries", "Overview", "Industries", new object(), new { @class = "has-sub" })
+                        <ul class="sub-menu">
+                            <li>@Html.ActionLink("Financial Services", "FinancialServices", "Industries")</li>
+                            <li>@Html.ActionLink("Healthcare", "Healthcare", "Industries")</li>
+                            <li>@Html.ActionLink("Insurance", "Insurance", "Industries")</li>
+                            <li>@Html.ActionLink("Real Estate", "RealEstate", "Industries")</li>
+                            <li>@Html.ActionLink("Retail", "Retail", "Industries")</li>
+                            <li>@Html.ActionLink("Education", "Education", "Industries")</li>
+                        </ul>
+                    </li>
                     <li>@Html.ActionLink("Case Studies", "CaseStudies", "Resources")</li>
                     <li>@Html.ActionLink("About Us", "Overview", "Company", new object(), new { @class = "has-sub" })
                         <ul class="sub-menu">

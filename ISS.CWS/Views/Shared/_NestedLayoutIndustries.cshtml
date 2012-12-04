@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "~/Views/Shared/_NestedLayout.cshtml";
+}
+
+@RenderBody()
+
+<div class="tabContainer">
+    <ul>
+        <li class="tabActive">
+            <div>Overview </div>
+        </li>
+        <li>
+            <div>Services </div>
+        </li>
+        <li>
+            <div>Case Studies </div>
+        </li>
+        <li>
+            <div>Why Innovative Services </div>
+        </li>
+        <li>
+            <div>Research &amp; Trends </div>
+        </li>
+    </ul>
+</div>
+<div class="tabContent" style="display: block;">
+    @RenderSection("Overview", false)
+</div>
+<div class="tabContent" style="display: none;">
+    @RenderSection("Services", false)
+</div>
+<div class="tabContent" style="display: none;">
+    @RenderSection("CaseStudies", false)
+</div>
+<div class="tabContent" style="display: none;">
+    @RenderSection("Why", false)
+</div>
+<div class="tabContent" style="display: none;">
+    @RenderSection("Research", false)
+</div>
+<script type="text/javascript">$('.tabContainer ul li').bind('click', function () {
+    $('.tabContainer ul li').removeClass('tabActive');
+    $(this).addClass('tabActive');
+    $('.tabContent').hide();
+    $('.tabContent').eq($(this).index()).show();
+});</script>

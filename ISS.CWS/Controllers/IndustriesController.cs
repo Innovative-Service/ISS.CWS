@@ -20,5 +20,35 @@ namespace ISS.CWS.Controllers
         {
             return View();
         }
+
+        public ActionResult Education()
+        {
+            return View();
+        }
+
+        public ActionResult FinancialServices()
+        {
+            return View();
+        }
+
+        public ActionResult Healthcare()
+        {
+            return View();
+        }
+
+        public ActionResult Insurance()
+        {
+            return View();
+        }
+
+        public ActionResult Retail()
+        {
+            return View();
+        }
+
+        public ActionResult RealEstate()
+        {
+            return View();
+        }
     }
 }

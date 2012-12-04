@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<sitemanifest>
-  <IisApp path="D:\Projects\Projects Data\3rd Party\Service\ISS.CWS\web_deploy" managedRuntimeVersion="v4.0" />
-  <setAcl path="D:\Projects\Projects Data\3rd Party\Service\ISS.CWS\web_deploy" setAclResourceType="Directory" />
-  <setAcl path="D:\Projects\Projects Data\3rd Party\Service\ISS.CWS\web_deploy" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
-</sitemanifest>
